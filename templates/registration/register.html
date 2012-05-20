@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}User Registration{% endblock %}
+{% block head %}User Registration{% endblock %}
+{% block content %}
+
+	<div class="page-header">
+		<h1>Register</h1>
+	</div>
+	<p class="lead">
+		Create account to be able to mannage your games
+	</p>
+
+	<div class="row">
+		<div class="span4">
+			<form method="POST" action="."> {% csrf_token %}
+				<div class="alert-error-register">
+					{{form.as_p}}
+				</div
+				<div class="btn-group">
+					<button class="btn btn-success">Register</button>
+				</div>
+			<form/>
+		</div>
+	</div>
+{% endblock %}

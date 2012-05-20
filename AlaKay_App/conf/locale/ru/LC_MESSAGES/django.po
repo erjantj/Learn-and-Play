@@ -1,0 +1,887 @@
+# This file is distributed under the same license as the Django package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-28 13:05+0600\n"
+"PO-Revision-Date: 2011-03-04 18:40+0000\n"
+"Last-Translator: dnx <sinednx@gmail.com>\n"
+"Language-Team: Russian <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: .\views.py:13
+msgid "Welcome to my site."
+msgstr ""
+
+#: .\views.py:14
+msgid "Hello Web"
+msgstr "Калай ее"
+
+#~ msgid "Arabic"
+#~ msgstr "Арабский"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "Азербайджанский"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Болгарский"
+
+#~ msgid "Bengali"
+#~ msgstr "Бенгальский"
+
+#~ msgid "Bosnian"
+#~ msgstr "Боснийский"
+
+#~ msgid "Catalan"
+#~ msgstr "Каталанский"
+
+#~ msgid "Czech"
+#~ msgstr "Чешский"
+
+#~ msgid "Welsh"
+#~ msgstr "Уэльский"
+
+#~ msgid "Danish"
+#~ msgstr "Датский"
+
+#~ msgid "German"
+#~ msgstr "Немецкий"
+
+#~ msgid "Greek"
+#~ msgstr "Греческий"
+
+#~ msgid "English"
+#~ msgstr "Английский"
+
+#~ msgid "British English"
+#~ msgstr "Британский английский"
+
+#~ msgid "Spanish"
+#~ msgstr "Испанский"
+
+#~ msgid "Argentinian Spanish"
+#~ msgstr "Аргентинский испанский"
+
+#~ msgid "Mexican Spanish"
+#~ msgstr "Мексиканский испанский"
+
+#~ msgid "Estonian"
+#~ msgstr "Эстонский"
+
+#~ msgid "Basque"
+#~ msgstr "Баскский"
+
+#~ msgid "Persian"
+#~ msgstr "Персидский"
+
+#~ msgid "Finnish"
+#~ msgstr "Финский"
+
+#~ msgid "French"
+#~ msgstr "Французский"
+
+#~ msgid "Frisian"
+#~ msgstr "Фризский"
+
+#~ msgid "Irish"
+#~ msgstr "Ирландский"
+
+#~ msgid "Galician"
+#~ msgstr "Галисийский"
+
+#~ msgid "Hebrew"
+#~ msgstr "Иврит"
+
+#~ msgid "Hindi"
+#~ msgstr "Хинди"
+
+#~ msgid "Croatian"
+#~ msgstr "Хорватский"
+
+#~ msgid "Hungarian"
+#~ msgstr "Венгерский"
+
+#~ msgid "Indonesian"
+#~ msgstr "Индонезийский"
+
+#~ msgid "Icelandic"
+#~ msgstr "Исландский"
+
+#~ msgid "Italian"
+#~ msgstr "Итальянский"
+
+#~ msgid "Japanese"
+#~ msgstr "Японский"
+
+#~ msgid "Georgian"
+#~ msgstr "Грузинский"
+
+#~ msgid "Khmer"
+#~ msgstr "Кхмерский"
+
+#~ msgid "Kannada"
+#~ msgstr "Каннада"
+
+#~ msgid "Korean"
+#~ msgstr "Корейский"
+
+#~ msgid "Lithuanian"
+#~ msgstr "Литовский"
+
+#~ msgid "Latvian"
+#~ msgstr "Латвийский"
+
+#~ msgid "Macedonian"
+#~ msgstr "Македонский"
+
+#~ msgid "Malayalam"
+#~ msgstr "Малаялам"
+
+#~ msgid "Mongolian"
+#~ msgstr "Монгольский"
+
+#~ msgid "Dutch"
+#~ msgstr "Голландский"
+
+#~ msgid "Norwegian"
+#~ msgstr "Норвежский"
+
+#~ msgid "Norwegian Bokmal"
+#~ msgstr "Норвежский (Букмол)"
+
+#~ msgid "Norwegian Nynorsk"
+#~ msgstr "Норвежский (Нюнорск)"
+
+#~ msgid "Punjabi"
+#~ msgstr "Панджаби"
+
+#~ msgid "Polish"
+#~ msgstr "Польский"
+
+#~ msgid "Portuguese"
+#~ msgstr "Португальский"
+
+#~ msgid "Brazilian Portuguese"
+#~ msgstr "Бразильский португальский"
+
+#~ msgid "Romanian"
+#~ msgstr "Румынский"
+
+#~ msgid "Russian"
+#~ msgstr "Русский"
+
+#~ msgid "Slovak"
+#~ msgstr "Словацкий"
+
+#~ msgid "Slovenian"
+#~ msgstr "Словенский"
+
+#~ msgid "Albanian"
+#~ msgstr "Албанский"
+
+#~ msgid "Serbian"
+#~ msgstr "Сербский"
+
+#~ msgid "Serbian Latin"
+#~ msgstr "Сербский (латиница)"
+
+#~ msgid "Swedish"
+#~ msgstr "Шведский"
+
+#~ msgid "Tamil"
+#~ msgstr "Тамильский"
+
+#~ msgid "Telugu"
+#~ msgstr "Телугу"
+
+#~ msgid "Thai"
+#~ msgstr "Тайский"
+
+#~ msgid "Turkish"
+#~ msgstr "Турецкий"
+
+#~ msgid "Ukrainian"
+#~ msgstr "Украинский"
+
+#~ msgid "Urdu"
+#~ msgstr "Урду"
+
+#~ msgid "Vietnamese"
+#~ msgstr "Вьетнамский"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "Упрощенный китайский"
+
+#~ msgid "Traditional Chinese"
+#~ msgstr "Традиционный китайский"
+
+#~ msgid "Enter a valid value."
+#~ msgstr "Введите правильное значение."
+
+#~ msgid "This URL appears to be a broken link."
+#~ msgstr "Эта ссылка не работает."
+
+#~ msgid "Enter a valid URL."
+#~ msgstr "Введите правильный URL."
+
+#~ msgid "Enter a valid e-mail address."
+#~ msgstr "Введите правильный адрес электронной почты."
+
+#~ msgid ""
+#~ "Enter a valid 'slug' consisting of letters, numbers, underscores or "
+#~ "hyphens."
+#~ msgstr ""
+#~ "Значение должно состоять только из букв, цифр, знаков подчеркивания или "
+#~ "дефиса."
+
+#~ msgid "Enter a valid IPv4 address."
+#~ msgstr "Введите правильный IPv4 адрес."
+
+#~ msgid "Enter only digits separated by commas."
+#~ msgstr "Введите цифры, разделенные запятыми."
+
+#~ msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+#~ msgstr ""
+#~ "Убедитесь, что это значение — %(limit_value)s (сейчас оно — %(show_value)"
+#~ "s)."
+
+#~ msgid "Ensure this value is less than or equal to %(limit_value)s."
+#~ msgstr "Убедитесь, что это значение меньше либо равно %(limit_value)s."
+
+#~ msgid "Ensure this value is greater than or equal to %(limit_value)s."
+#~ msgstr "Убедитесь, что это значение больше либо равно %(limit_value)s."
+
+#~ msgid ""
+#~ "Ensure this value has at least %(limit_value)d characters (it has %"
+#~ "(show_value)d)."
+#~ msgstr ""
+#~ "Убедитесь, что это значение содержит не менее %(limit_value)d символов "
+#~ "(сейчас %(show_value)d)."
+
+#~ msgid ""
+#~ "Ensure this value has at most %(limit_value)d characters (it has %"
+#~ "(show_value)d)."
+#~ msgstr ""
+#~ "Убедитесь, что это значение содержит не более %(limit_value)d символов "
+#~ "(сейчас %(show_value)d)."
+
+#~ msgid "%(field_name)s must be unique for %(date_field)s %(lookup)s."
+#~ msgstr ""
+#~ "Значение в поле %(field_name)s должно быть уникальным для %(lookup)s в "
+#~ "поле %(date_field)s."
+
+#~ msgid "%(model_name)s with this %(field_label)s already exists."
+#~ msgstr "%(model_name)s с таким %(field_label)s уже существует."
+
+#~ msgid "and"
+#~ msgstr "и"
+
+#~ msgid "Value %r is not a valid choice."
+#~ msgstr "Значения %r нет среди допустимых вариантов."
+
+#~ msgid "This field cannot be null."
+#~ msgstr "Это поле не может иметь значение NULL."
+
+#~ msgid "This field cannot be blank."
+#~ msgstr "Это поле не может быть пустым."
+
+#~ msgid "Field of type: %(field_type)s"
+#~ msgstr "Поле типа %(field_type)s"
+
+#~ msgid "Integer"
+#~ msgstr "Целое"
+
+#~ msgid "This value must be an integer."
+#~ msgstr "Это значение должно быть целым числом."
+
+#~ msgid "This value must be either True or False."
+#~ msgstr "Значение должно быть либо True, либо False."
+
+#~ msgid "Boolean (Either True or False)"
+#~ msgstr "Логическое (True или False)"
+
+#~ msgid "String (up to %(max_length)s)"
+#~ msgstr "Строка (до %(max_length)s)"
+
+#~ msgid "Comma-separated integers"
+#~ msgstr "Целые, разделенные запятыми"
+
+#~ msgid "Date (without time)"
+#~ msgstr "Дата (без указания времени)"
+
+#~ msgid "Enter a valid date in YYYY-MM-DD format."
+#~ msgstr "Введите правильную дату в формате YYYY-MM-DD."
+
+#~ msgid "Invalid date: %s"
+#~ msgstr "Неправильная дата: %s"
+
+#~ msgid "Enter a valid date/time in YYYY-MM-DD HH:MM[:ss[.uuuuuu]] format."
+#~ msgstr ""
+#~ "Введите правильные дату и время в формате YYYY-MM-DD HH:MM[:ss[.uuuuuu]]."
+
+#~ msgid "Date (with time)"
+#~ msgstr "Дата (с указанием времени)"
+
+#~ msgid "This value must be a decimal number."
+#~ msgstr "Это значение должно быть целым числом."
+
+#~ msgid "Decimal number"
+#~ msgstr "Число с фиксированной запятой"
+
+#~ msgid "E-mail address"
+#~ msgstr "Адрес электронной почты"
+
+#~ msgid "File path"
+#~ msgstr "Путь к файлу"
+
+#~ msgid "This value must be a float."
+#~ msgstr "Это значение должно быть числом с плавающей запятой."
+
+#~ msgid "Floating point number"
+#~ msgstr "Число с плавающей запятой"
+
+#~ msgid "Big (8 byte) integer"
+#~ msgstr "Длинное целое (8 байт)"
+
+#~ msgid "IP address"
+#~ msgstr "IP-адрес"
+
+#~ msgid "This value must be either None, True or False."
+#~ msgstr "Значение должно быть None, True или False."
+
+#~ msgid "Boolean (Either True, False or None)"
+#~ msgstr "Логическое (True, False или None)"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid "Time"
+#~ msgstr "Время"
+
+#~ msgid "Enter a valid time in HH:MM[:ss[.uuuuuu]] format."
+#~ msgstr "Введите правильное время в формате HH:MM[:ss[.uuuuuu]]."
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "XML text"
+#~ msgstr "XML текст"
+
+#~ msgid "Model %(model)s with pk %(pk)r does not exist."
+#~ msgstr "Объект модели %(model)s с первичным ключом %(pk)r не существует."
+
+#~ msgid "Foreign Key (type determined by related field)"
+#~ msgstr "Внешний ключ (тип определен по связанному полю)"
+
+#~ msgid "One-to-one relationship"
+#~ msgstr "Связь \"один к одному\""
+
+#~ msgid "Many-to-many relationship"
+#~ msgstr "Связь \"многие ко многим\""
+
+#~ msgid ""
+#~ "Hold down \"Control\", or \"Command\" on a Mac, to select more than one."
+#~ msgstr ""
+#~ "Удерживайте \"Control\" (или \"Command\" на Mac) для выбора нескольких "
+#~ "значений."
+
+#~ msgid "This field is required."
+#~ msgstr "Обязательное поле."
+
+#~ msgid "Enter a whole number."
+#~ msgstr "Введите целое число."
+
+#~ msgid "Enter a number."
+#~ msgstr "Введите число."
+
+#~ msgid "Ensure that there are no more than %s digits in total."
+#~ msgstr "Убедитесь, что ввели не больше %s цифр."
+
+#~ msgid "Ensure that there are no more than %s decimal places."
+#~ msgstr "Убедитесь, что ввели не больше %s цифр после запятой."
+
+#~ msgid ""
+#~ "Ensure that there are no more than %s digits before the decimal point."
+#~ msgstr "Убедитесь, что ввели не больше %s цифр до запятой."
+
+#~ msgid "Enter a valid date."
+#~ msgstr "Введите правильную дату."
+
+#~ msgid "Enter a valid time."
+#~ msgstr "Введите правильное время."
+
+#~ msgid "Enter a valid date/time."
+#~ msgstr "Введите правильную дату и время."
+
+#~ msgid "No file was submitted. Check the encoding type on the form."
+#~ msgstr "Ни одного файла не было отправлено. Проверьте тип кодировки формы."
+
+#~ msgid "No file was submitted."
+#~ msgstr "Ни одного файла не было отправлено."
+
+#~ msgid "The submitted file is empty."
+#~ msgstr "Отправленный файл пуст."
+
+#~ msgid ""
+#~ "Ensure this filename has at most %(max)d characters (it has %(length)d)."
+#~ msgstr ""
+#~ "Убедитесь, что это имя файла содержит не более %(max)d символов (сейчас %"
+#~ "(length)d)."
+
+#~ msgid "Please either submit a file or check the clear checkbox, not both."
+#~ msgstr ""
+#~ "Пожалуйста, либо предоставьте файл или поставьте флажок на пункте "
+#~ "очистить, но не оба."
+
+#~ msgid ""
+#~ "Upload a valid image. The file you uploaded was either not an image or a "
+#~ "corrupted image."
+#~ msgstr ""
+#~ "Загрузите правильное изображение. Файл, который вы загрузили, поврежден "
+#~ "или не является изображением."
+
+#~ msgid ""
+#~ "Select a valid choice. %(value)s is not one of the available choices."
+#~ msgstr ""
+#~ "Выберите корректный вариант. %(value)s нет среди допустимых значений."
+
+#~ msgid "Enter a list of values."
+#~ msgstr "Введите список значений."
+
+#~ msgid "Order"
+#~ msgstr "Порядок"
+
+#~ msgid "Delete"
+#~ msgstr "Удалить"
+
+#~ msgid "Please correct the duplicate data for %(field)s."
+#~ msgstr "Пожалуйста, измените повторяющееся значение в поле %(field)s."
+
+#~ msgid ""
+#~ "Please correct the duplicate data for %(field)s, which must be unique."
+#~ msgstr ""
+#~ "Пожалуйста, измените значение в поле %(field)s, оно должно быть "
+#~ "уникальным."
+
+#~ msgid ""
+#~ "Please correct the duplicate data for %(field_name)s which must be unique "
+#~ "for the %(lookup)s in %(date_field)s."
+#~ msgstr ""
+#~ "Пожалуйста, измените значение в поле %(field_name)s, оно должно быть "
+#~ "уникальным для %(lookup)s в поле %(date_field)s."
+
+#~ msgid "Please correct the duplicate values below."
+#~ msgstr "Пожалуйста, измените повторяющиеся значения ниже."
+
+#~ msgid ""
+#~ "The inline foreign key did not match the parent instance primary key."
+#~ msgstr "Внешний ключ не совпадает с первичным ключом родителя."
+
+#~ msgid ""
+#~ "Select a valid choice. That choice is not one of the available choices."
+#~ msgstr ""
+#~ "Выберите корректный вариант. Вашего варианта нет среди допустимых "
+#~ "значений."
+
+#~ msgid "Select a valid choice. %s is not one of the available choices."
+#~ msgstr "Выберите корректный вариант. %s нет среди допустимых значений."
+
+#~ msgid "\"%s\" is not a valid value for a primary key."
+#~ msgstr "\"%s\" не является верным значением для первичного ключа."
+
+#~ msgid "Currently"
+#~ msgstr "В настоящее время"
+
+#~ msgid "Change"
+#~ msgstr "Изменить"
+
+#~ msgid "Clear"
+#~ msgstr "Очистить"
+
+#~ msgid "Unknown"
+#~ msgstr "Неизвестно"
+
+#~ msgid "Yes"
+#~ msgstr "Да"
+
+#~ msgid "No"
+#~ msgstr "Нет"
+
+#~ msgid "yes,no,maybe"
+#~ msgstr "да,нет,может быть"
+
+#~ msgid "%(size)d byte"
+#~ msgid_plural "%(size)d bytes"
+#~ msgstr[0] "%(size)d байт"
+#~ msgstr[1] "%(size)d байт(а)"
+#~ msgstr[2] "%(size)d байт(а)"
+#~ msgstr[3] "%(size)d байт(а)"
+
+#~ msgid "%s KB"
+#~ msgstr "%s KБ"
+
+#~ msgid "%s MB"
+#~ msgstr "%s MБ"
+
+#~ msgid "%s GB"
+#~ msgstr "%s GБ"
+
+#~ msgid "%s TB"
+#~ msgstr "%s TБ"
+
+#~ msgid "%s PB"
+#~ msgstr "%s PБ"
+
+#~ msgid "p.m."
+#~ msgstr "п.п."
+
+#~ msgid "a.m."
+#~ msgstr "д.п."
+
+#~ msgid "PM"
+#~ msgstr "ПП"
+
+#~ msgid "AM"
+#~ msgstr "ДП"
+
+#~ msgid "midnight"
+#~ msgstr "полночь"
+
+#~ msgid "noon"
+#~ msgstr "полдень"
+
+#~ msgid "Monday"
+#~ msgstr "Понедельник"
+
+#~ msgid "Tuesday"
+#~ msgstr "Вторник"
+
+#~ msgid "Wednesday"
+#~ msgstr "Среда"
+
+#~ msgid "Thursday"
+#~ msgstr "Четверг"
+
+#~ msgid "Friday"
+#~ msgstr "Пятница"
+
+#~ msgid "Saturday"
+#~ msgstr "Суббота"
+
+#~ msgid "Sunday"
+#~ msgstr "Воскресенье"
+
+#~ msgid "Mon"
+#~ msgstr "Пнд"
+
+#~ msgid "Tue"
+#~ msgstr "Втр"
+
+#~ msgid "Wed"
+#~ msgstr "Срд"
+
+#~ msgid "Thu"
+#~ msgstr "Чтв"
+
+#~ msgid "Fri"
+#~ msgstr "Птн"
+
+#~ msgid "Sat"
+#~ msgstr "Сбт"
+
+#~ msgid "Sun"
+#~ msgstr "Вск"
+
+#~ msgid "January"
+#~ msgstr "Январь"
+
+#~ msgid "February"
+#~ msgstr "Февраль"
+
+#~ msgid "March"
+#~ msgstr "Март"
+
+#~ msgid "April"
+#~ msgstr "Апрель"
+
+#~ msgid "May"
+#~ msgstr "Май"
+
+#~ msgid "June"
+#~ msgstr "Июнь"
+
+#~ msgid "July"
+#~ msgstr "Июль"
+
+#~ msgid "August"
+#~ msgstr "Август"
+
+#~ msgid "September"
+#~ msgstr "Сентябрь"
+
+#~ msgid "October"
+#~ msgstr "Октябрь"
+
+#~ msgid "November"
+#~ msgstr "Ноябрь"
+
+#~ msgid "December"
+#~ msgstr "Декабрь"
+
+#~ msgid "jan"
+#~ msgstr "янв"
+
+#~ msgid "feb"
+#~ msgstr "фев"
+
+#~ msgid "mar"
+#~ msgstr "мар"
+
+#~ msgid "apr"
+#~ msgstr "апр"
+
+#~ msgid "may"
+#~ msgstr "май"
+
+#~ msgid "jun"
+#~ msgstr "июн"
+
+#~ msgid "jul"
+#~ msgstr "июл"
+
+#~ msgid "aug"
+#~ msgstr "авг"
+
+#~ msgid "sep"
+#~ msgstr "сен"
+
+#~ msgid "oct"
+#~ msgstr "окт"
+
+#~ msgid "nov"
+#~ msgstr "ноя"
+
+#~ msgid "dec"
+#~ msgstr "дек"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Jan."
+#~ msgstr "Янв."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Feb."
+#~ msgstr "Фев."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "March"
+#~ msgstr "Март"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "April"
+#~ msgstr "Апрель"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "May"
+#~ msgstr "Май"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "June"
+#~ msgstr "Июнь"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "July"
+#~ msgstr "Июль"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Aug."
+#~ msgstr "Авг."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Sept."
+#~ msgstr "Сен."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Oct."
+#~ msgstr "Окт."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Nov."
+#~ msgstr "Ноя."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Dec."
+#~ msgstr "Дек."
+
+#~ msgctxt "alt. month"
+#~ msgid "January"
+#~ msgstr "января"
+
+#~ msgctxt "alt. month"
+#~ msgid "February"
+#~ msgstr "февраля"
+
+#~ msgctxt "alt. month"
+#~ msgid "March"
+#~ msgstr "марта"
+
+#~ msgctxt "alt. month"
+#~ msgid "April"
+#~ msgstr "апреля"
+
+#~ msgctxt "alt. month"
+#~ msgid "May"
+#~ msgstr "мая"
+
+#~ msgctxt "alt. month"
+#~ msgid "June"
+#~ msgstr "июня"
+
+#~ msgctxt "alt. month"
+#~ msgid "July"
+#~ msgstr "июля"
+
+#~ msgctxt "alt. month"
+#~ msgid "August"
+#~ msgstr "августа"
+
+#~ msgctxt "alt. month"
+#~ msgid "September"
+#~ msgstr "сентября"
+
+#~ msgctxt "alt. month"
+#~ msgid "October"
+#~ msgstr "октября"
+
+#~ msgctxt "alt. month"
+#~ msgid "November"
+#~ msgstr "ноября"
+
+#~ msgctxt "alt. month"
+#~ msgid "December"
+#~ msgstr "декабря"
+
+#~ msgid "or"
+#~ msgstr "или"
+
+#~ msgid ", "
+#~ msgstr ","
+
+#~ msgid "year"
+#~ msgid_plural "years"
+#~ msgstr[0] "год"
+#~ msgstr[1] "лет"
+#~ msgstr[2] "лет"
+#~ msgstr[3] "лет"
+
+#~ msgid "month"
+#~ msgid_plural "months"
+#~ msgstr[0] "месяц"
+#~ msgstr[1] "месяцев"
+#~ msgstr[2] "месяцев"
+#~ msgstr[3] "месяцев"
+
+#~ msgid "week"
+#~ msgid_plural "weeks"
+#~ msgstr[0] "неделя"
+#~ msgstr[1] "недель"
+#~ msgstr[2] "недель"
+#~ msgstr[3] "недель"
+
+#~ msgid "day"
+#~ msgid_plural "days"
+#~ msgstr[0] "день"
+#~ msgstr[1] "дней"
+#~ msgstr[2] "дней"
+#~ msgstr[3] "дней"
+
+#~ msgid "hour"
+#~ msgid_plural "hours"
+#~ msgstr[0] "час"
+#~ msgstr[1] "часов"
+#~ msgstr[2] "часов"
+#~ msgstr[3] "часов"
+
+#~ msgid "minute"
+#~ msgid_plural "minutes"
+#~ msgstr[0] "минута"
+#~ msgstr[1] "минут"
+#~ msgstr[2] "минут"
+#~ msgstr[3] "минут"
+
+#~ msgid "minutes"
+#~ msgstr "минут"
+
+#~ msgid "%(number)d %(type)s"
+#~ msgstr "%(number)d %(type)s"
+
+#~ msgid ", %(number)d %(type)s"
+#~ msgstr ", %(number)d %(type)s"
+
+#~ msgid "DATE_FORMAT"
+#~ msgstr "d.m.Y"
+
+#~ msgid "DATETIME_FORMAT"
+#~ msgstr "d.m.Y H:i"
+
+#~ msgid "TIME_FORMAT"
+#~ msgstr "H:i"
+
+#~ msgid "YEAR_MONTH_FORMAT"
+#~ msgstr "F Y"
+
+#~ msgid "MONTH_DAY_FORMAT"
+#~ msgstr "j F"
+
+#~ msgid "The %(verbose_name)s was created successfully."
+#~ msgstr "%(verbose_name)s был успешно создан."
+
+#~ msgid "The %(verbose_name)s was updated successfully."
+#~ msgstr "%(verbose_name)s был успешно изменен."
+
+#~ msgid "The %(verbose_name)s was deleted."
+#~ msgstr "%(verbose_name)s был успешно удален."
+
+#~ msgid "No year specified"
+#~ msgstr "Не указан год"
+
+#~ msgid "No month specified"
+#~ msgstr "Не указан месяц"
+
+#~ msgid "No day specified"
+#~ msgstr "Не указан день"
+
+#~ msgid "No week specified"
+#~ msgstr "Не указана неделя"
+
+#~ msgid "No %(verbose_name_plural)s available"
+#~ msgstr "%(verbose_name_plural)s не доступен"
+
+#~ msgid ""
+#~ "Future %(verbose_name_plural)s not available because %(class_name)s."
+#~ "allow_future is False."
+#~ msgstr ""
+#~ "Будущий %(verbose_name_plural)s не доступный, потому что %(class_name)s."
+#~ "allow_future Ложен."
+
+#~ msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+#~ msgstr "Недействительная дата '%(datestr)s' данный формат '%(format)s'"
+
+#~ msgid "No %(verbose_name)s found matching the query"
+#~ msgstr "Не наиден никакой %(verbose_name)s соответствующим запросу"
+
+#~ msgid "Page is not 'last', nor can it be converted to an int."
+#~ msgstr ""
+#~ "Страница не является 'последней', и/или она не может быть преобразована в "
+#~ "int."
+
+#~ msgid "Invalid page (%(page_number)s)"
+#~ msgstr "Недействительная страница (%(page_number)s)"
+
+#~ msgid "Empty list and '%(class_name)s.allow_empty' is False."
+#~ msgstr "Пустой список и '%(class_name)s.allow_empty' Ложны."

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}User Account{% endblock %}
+{% block head %}Welcome user : {{username}}{% endblock %}
+{% block custom_style %}
+<style type="text/css">
+
+#raiting {position:relative; height:16px; cursor:pointer; width:83px; float:left} /* Блок рейтинга*/
+#raiting_blank, #raiting_votes, #raiting_hover {height:16px; position:absolute}
+#raiting_blank { background:url(/site_media/images/ratings.png); width:83px; } /* "Чистые" звездочки */
+#raiting_votes {background:url(/site_media/images/ratings.png) 0 -16px} /*  Закрашенные звездочки */ 
+#raiting_hover {background:url(/site_media/images/ratings.png) 0 -32px; display:none}  /*  звездочки при голосовании */ 
+#raiting_info {margin-left:100px}
+#raiting_info img{vertical-align:middle; margin:0 5px; display:none}
+</style>
+<script type="text/javascript" src="/site_media/bootstrap/js/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="page-header">
+		<h1>My Games <small>here is your apps list </small></h1>
+  	</div>
+	{% if games %}
+		{% for row in games %}
+		 	<div class="row-fluid">
+			{% for game in row %}
+	            <div class="span4">
+					<a href="/app/{{game.id}}" >
+		            	<div class="thumbnail">	
+					  		<img src = "/site_media/images/games/{{ game.image_name }}" />
+					  	</div>
+
+		              	<h2>{{game.title}}</h2>
+	              	</a>
+	              	<a herf="#" >{{game.user.username}}</a>
+	              	<div id="raiting_star">
+						<div id="raiting">
+							<div id="raiting_blank"></div>
+							<div id="raiting_hover"></div>
+							<div id="raiting_votes" style='width:{{game.rate}}px;'></div>
+						</div>
+					</div>
+
+	            </div><!--/span-->
+	        	
+			{% endfor %}
+			</div><!--/row-->
+		{% endfor %}
+	{% else %}
+		<h2>No games found</h2>
+	{% endif%}
+{% endblock %}

@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% block title %}Welcome to AlaQay{% endblock %}
+{% block head %}{{ page }}{% endblock %}
+
+{% block custom_style %}
+<style type="text/css">
+
+#raiting {position:relative; height:16px; cursor:pointer; width:83px; float:left} /* Блок рейтинга*/
+#raiting_blank, #raiting_votes, #raiting_hover {height:16px; position:absolute}
+#raiting_blank { background:url(/site_media/images/ratings.png); width:83px; } /* "Чистые" звездочки */
+#raiting_votes {background:url(/site_media/images/ratings.png) 0 -16px} /*  Закрашенные звездочки */ 
+#raiting_hover {background:url(/site_media/images/ratings.png) 0 -32px; display:none}  /*  звездочки при голосовании */ 
+#raiting_info {margin-left:100px}
+#raiting_info img{vertical-align:middle; margin:0 5px; display:none}
+</style>
+
+<script type="text/javascript" src="/site_media/bootstrap/js/jquery.min.js"></script>
+<script type="text/javascript" src="/site_media/bootstrap/js/jquery.cookies.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+total_reiting = {{game.rate}}/{{game.vote}}; // итоговый ретинг
+id_arc = {{game.id}}; // id статьи 
+var star_widht = total_reiting*17 ;
+$('#raiting_votes').width(star_widht);
+$('#raiting_info h5').append(total_reiting);
+he_voted = $.cookies.get('article'+id_arc); // проверяем есть ли кука?
+if(he_voted == null){
+$('#raiting').hover(function() {
+      $('#raiting_votes, #raiting_hover').toggle();
+	  },
+	  function() {
+      $('#raiting_votes, #raiting_hover').toggle();
+});
+var margin_doc = $("#raiting").offset();
+$("#raiting").mousemove(function(e){
+var widht_votes = e.pageX - margin_doc.left;
+if (widht_votes == 0) widht_votes =1 ;
+user_votes = Math.ceil(widht_votes/17);  
+// обратите внимание переменная  user_votes должна задаваться без var, т.к. в этом случае она будет глобальной и мы сможем к ней обратиться из другой ф-ции (нужна будет при клике на оценке.
+$('#raiting_hover').width(user_votes*17);
+});
+// отправка
+$('#raiting').click(function(){
+$('#raiting_info h5, #raiting_info img').toggle();
+$.get(
+"/raiting",
+{id_arc: id_arc, user_votes: user_votes}, 
+function(data){
+	$("#raiting_info h5").html(data);
+	$('#raiting_votes').width((total_reiting + user_votes)*17/2);
+	$('#raiting_info h5, #raiting_info img').toggle();
+	$.cookies.set('article'+id_arc, 123, {hoursToLive: 0}); // создаем куку 
+	$("#raiting").unbind();
+	$('#raiting_hover').hide();
+	}
+	   )
+								   });
+}
+						   });
+</script>
+
+{% endblock %}
+
+{% block content %}
+<section>
+	<div class="page-header">
+		<h1>{{game.title}} <small> by <a href="{{game.link}}">{{game.user.username}}</a></small></h1>
+	</div>
+
+  	<div class="row">
+    	<div class="span4">
+    		<p class="lead">{{game.description}}</p>
+    	</div>
+		
+		<div class="span4">
+			<ul class="thumbnails">
+			    <li class="span5">
+			    	<div class="thumbnail" style="border:none;">
+			    		<img src="/site_media/images/games/{{ game.image_name }}" alt="" />
+			        </div>
+			    </li>
+			</ul>
+		
+			<div id="raiting_star">
+			<div id="raiting">
+			<div id="raiting_blank"></div>
+			<div id="raiting_hover"></div>
+			<div id="raiting_votes"></div>
+			</div>
+			<div id="raiting_info">  <img src="/site_media/images/load.gif" /> <h5> Рейтинг статьи: </h5></div>
+
+			<h3>Developer page</h3>
+			<p>
+				<a href="{{game.link}}">{{game.user.username}}</a>
+			</p>
+			<p>
+				<br />
+				<a class="btn btn-primary btn-large" onclick='openGame()'>Try this game!</a>
+				{% if user.is_authenticated %}
+					{% if not installed%}
+					<a class="btn btn-primary btn-large btn-success" href="/add_to_list?game_id={{game.id}}" >Add to my list</a>
+					{% else %}
+					<a class="btn btn-primary btn-large btn-warning"  href="/delete_from_list?game_id={{game.id}}"> Delete from list </a> 
+					{% endif %}
+				{% endif%}
+			</p>
+		</div>
+	</div>
+</section>
+<section>
+	{% if screenshots %}
+		<div class="page-header">
+			<h2>Screenshots</h2>
+		</div>
+		{% for s in screenshots %}
+			<img src = "/site_media/images/games/screenshots/{{ s.image_name }}" />
+		{% endfor %}
+	{% else %}
+
+	{% endif %}
+</section>
+<section>
+	<div class="page-header">
+			<h2>Comments</h2>
+		</div>
+	{% load comments %}
+
+	{% get_comment_form for game as form %}
+
+	{%if user.is_authenticated%}
+	<p><button class="btn btn-primary btn-large btn-warning" onclick="toggleForm()" >Leave comment</button></p>
+
+	<div class="comment_form" style="display:none">
+	<form action="{% comment_form_target %}" method="post">
+	    {% csrf_token %}
+	    <p>
+		    {{ form.comment }}
+	    </p>  
+	    {{ form.content_type }}
+    	{{ form.object_pk }}
+    	{{ form.timestamp }}
+    	{{ form.security_hash }}
+    	<input type="hidden" name="next" value="/app/{{game.id}}" />
+	    
+	    <p><button class="btn btn-primary btn-large btn-success" > Post</button></p>
+	        
+
+	  </form>
+	</div>
+	{% else %}
+	<p class="lead">Sign in to leave comment</p>
+	{% endif %}
+	
+	{% get_comment_list for game as comment_list %}
+	{% if comment_list %}
+		{% for comment in comment_list %}
+			<div class="hero-unit" style="padding:10px;">
+				<img src="/site_media/images/quote.png" width="10%" style="float:left"/>
+				<span class="lead">{{comment.user.username}}</span>
+				<span>{{comment.submit_date}}</span>
+				<br />
+    			<span>{{comment.comment}}</span>
+    			
+    			<img class="pull-right" src="/site_media/images/quote2.png" width="10%"/>
+    		</div>
+		{% endfor %}
+	{% else %}
+		<p class="lead">No comments added yet</p>
+	{% endif %}
+</section>
+
+
+		<script type="text/javascript">
+		function openGame() {
+			window.open("{{link}}");
+		}
+		function toggleForm(){
+			$("div.comment_form").slideToggle();
+		}
+		</script>
+{% endblock %}

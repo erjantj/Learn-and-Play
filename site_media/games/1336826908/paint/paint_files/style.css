@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+ font-family: 'Aller_Bd';
+ src: url('../font-face/Aller_Bd.ttf') format('truetype');
+}
+
+* { margin:0; padding:0; border:0; background:none; color:#630; font: 12px Verdana, Geneva, sans-serif; list-style:none }
+body { background: url(http://img.oncoloring.com/images/bg.jpg) center top }
+h1, h2, h3, h4, h5, h6 { font-family: 'Aller_Bd', Verdana, Geneva, sans-serif; cursor:default }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-family: 'Aller_Bd', Verdana, Geneva, sans-serif }
+img { border:none }
+a { text-decoration:none }
+
+article, aside, details, figcaption, figure, footer, header, group, menu, nav, section { display:block; }
+
+#wrap { width:1000px; margin:0 auto; padding:0 10px 30px 10px; position:relative; background:url(http://img.oncoloring.com/images/wrap_bg.png) repeat-y }
+
+header { width:inherit; position:relative }
+header .wrap { width:1000px; margin:0 auto; padding:0 10px; background:url(http://img.oncoloring.com/images/wrap_bg.png) center repeat-y; }
+header .desk { position:relative; height:190px; background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat 0 0; margin:0 -10px; padding:0 10px }
+header .logo { background:url(../images/oncoloring_logo-header.jpg) no-repeat top center; width:700px; height:93px; margin:0 auto; }
+header .logo a { display:block; height:inherit }
+header .logo span { display:none }
+
+/*nav .icon h2 span { display:none }*/
+nav .icon { position:absolute }
+nav .icon h2 { display:block; cursor:pointer }
+nav .icon h2 .open, nav .icon h2 .close { width:inherit; height:inherit; display:block; }
+nav .icon h2 .close { display:none }
+nav .web { top:6px; left:41px; }
+nav .language { top:60px; left:173px; }
+nav .search { top:93px; left:577px; }
+nav .facebook { top:100px; left:744px; }
+nav .twitter { top:100px; left:835px; }
+nav .web h2, nav .language h2, nav .search h2, nav .facebook h2 a, nav .twitter h2 a { background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat; display:block }
+nav .web h2 { width:130px; height:170px;  background-position:0 -190px }
+nav .language h2 { width:90px; height:120px; background-position:-260px -190px }
+nav .search h2 { width:160px; height:75px; background-position:-440px -190px }
+nav .facebook h2 a { width:85px; height:80px;  background-position:-600px -190px }
+nav .twitter h2 a { width:80px; height:80px;  background-position:-685px -190px }
+nav .web:hover h2 { background-position:-130px -190px }
+nav .language:hover h2 { background-position:-350px -190px }
+nav .search:hover h2 { background-position:-440px -265px }
+nav .facebook:hover h2 a { background-position:-600px -270px }
+nav .twitter:hover h2 a { background-position:-685px -270px }
+
+nav .icon h2 span { display:none; background:url(http://img.oncoloring.com/images/sprites.png) no-repeat; font-size:11px; font-weight:normal; text-align:center; padding:13px 5px 15px 0; position:absolute; width:130px; top:-40px; font:14px 'Aller_Bd', Verdana, Geneva, sans-serif; z-index:10; color:#FFF; text-shadow:0 -1px 1px rgba(0,0,0,0.5) }
+nav .web h2 span { left:-50px; background-position:-880px 0; width:130px; padding:13px 5px 15px 0 }
+nav .language h2 span { left:50px; background-position:-880px -60px; width:130px; padding:13px 5px 15px 0 }
+nav .search h2 span { left:-30px; background-position:-880px -120px; width:90px; padding:13px 5px 17px 5px }
+nav .facebook h2 span { background-position:-880px -180px; width:90px; padding:14px 0 20px 0 }
+nav .twitter h2 span { left:-10px; background-position:-880px -240px; width:90px; padding:12px 0 20px 0 }
+nav .web ul, nav .language ul { position:absolute; background:url(http://img.oncoloring.com/images/sprites.png) -520px 0 no-repeat; padding:30px 5px 3px 80px; z-index:100 }
+nav .web ul { top:-300px; left:300px; width:160px; }
+nav .web h3, nav .language h3 { color:#FFF; text-shadow:0 1px 1px #583b10; font: 16px 'Aller_Bd', Verdana, Geneva, sans-serif; margin-bottom:10px; padding-left:10px }
+nav .web li { margin-bottom:3px }
+nav .web a, nav .language a { display:block; background:rgba(240,225,209,0.8); text-align:center; font:14px 'Aller_Bd', Verdana, Geneva, sans-serif; text-shadow:0 1px 1px #FFF; padding:7px 0 7px 5px; -moz-border-radius:10px; border-radius:10px; -webkit-border-radius:10px; -webkit-box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(209,184,157,0.5); -moz-box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(209,184,157,0.5); box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(209,184,157,0.5); }
+nav .web a:hover, nav .language a:hover { background: url(http://img.oncoloring.com/images/green_bg.png); -webkit-box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(101,121,5,0.8); -moz-box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(101,121,5,0.8); box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(101,121,5,0.8); color:#FFF; text-shadow:0 1px 2px rgba(0,0,0,0.5) }
+nav .language ul { width:270px; padding:30px 0 0 80px; top:-400px; left:120px; }
+nav .language li { margin-bottom:5px; margin-right:5px; float:left; width:130px }
+nav .language .icon { background:url(http://img.oncoloring.com/images/sprites.png) 0 -190px no-repeat; display:block; width:25px; height:25px; float:left; margin-top:-5px; }
+nav .language .icon.spa { background-position:-200px -300px }
+nav .language .icon.cat { background-position:0 -260px }
+nav .language .icon.eng { background-position:-39px -260px }
+nav .language .icon.por { background-position:-79px -260px }
+nav .language .icon.ita { background-position:-119px -260px }
+nav .language .icon.fre { background-position:-158px -260px }
+nav .language .icon.ger { background-position:-198px -260px }
+nav .language .icon.cze { background-position:-238px -260px }
+nav .language .icon.pol { background-position:0 -300px }
+nav .language .icon.tur { background-position:-40px -300px }
+nav .language .icon.ner { background-position:-80px -300px }
+nav .language .icon.rus { background-position:-120px -300px }
+nav .language .icon.gre { background-position:-160px -300px }
+nav .search .box { background:url(http://img.oncoloring.com/images/sprites.png) no-repeat -240px 0; width:280px; height:140px; position:absolute; left:142px; top:-230px; z-index:10; }
+nav .search .box input[type="text"] { height:25px; width:160px; position:absolute; top:40px; left:20px }
+nav .search .box input[type="button"] { height:90px; width:70px; position:absolute; top:30px; left:200px; background:url(http://img.oncoloring.com/images/sprites.png) no-repeat -440px -30px }
+nav .search .box input[type="button"]:active { background-position:-238px -150px }
+
+.btn { cursor:pointer }
+.clear { clear:both; }
+
+footer { clear:both; width:100%; background:url(http://img.oncoloring.com/images/sprites.jpg) center -1300px no-repeat }
+footer .wrap { width:1000px; padding:0 10px 20px; margin:0 auto; position:relative; background:inherit; }
+footer .fb-like { padding:0 20px; margin-bottom:130px }
+footer .fb-like .pypus { background:url(http://img.oncoloring.com/images/sprites.png) no-repeat -780px -440px; width:220px; height:170px; display:inline-block; position:absolute; z-index:10 }
+footer .fb-like .content { -moz-box-shadow:0 2px 2px 0 rgba(0,0,0,0.2); -webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.2); box-shadow:0 2px 2px 0 rgba(0,0,0,0.2); background:#FFF; -moz-border-radius: 10px; border-radius: 10px; -webkit-border-radius:10px; position:relative; padding-left:160px; }
+footer .fb-like .content span { float:right; display:block; padding:20px }
+footer .fb-like .content .msjfoot { font-size:18px; color:#990; border-right:1px solid #eee1d5; width:550px; padding:20px }
+footer .fb-like .content p { color:#990; margin-bottom:5px }
+footer .fb-like .content strong { color:#990; font-weight:bold }
+footer .center a, footer .link a { color:#FFF }
+footer .center a:hover, footer .link a:hover { color:#E3BC7A }
+footer .center, footer .link { text-shadow:0 1px 1px rgba(0,0,0,0.3); color:#E3BC7A; display:block }
+footer .center { text-align:center; }
+footer .underground { clear:both; width:100%; -webkit-box-shadow:inset 0 30px 30px rgba(0,0,0,0.3); }
+footer .underground .wrap { width:1000px; margin:0 auto; position:relative; padding:10px; clear:both; background:none }
+footer .underground .pressed { display:block; color:#000; text-shadow:0 1px 1px #6a4c15; font-weight:bold; text-align:center }
+
+.desk-front { height:130px; clear:both; position:relative; background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat -10px -360px }
+.desk-front .drawer { overflow:hidden; width:230px; height:110px; position:relative; top:20px; left:10px;  }
+.desk-front .drawer .shadow { position:absolute; top:0; right:0; width:200px; height:100px; background:url(http://img.oncoloring.com/images/sprites.png) no-repeat -30px -110px;  }
+.desk-front .drawer a { height:40px; width:205px; background:url(http://img.oncoloring.com/images/sprites.png) no-repeat 0 0; position:absolute; top:-10px; left:10px; padding:60px 20px 0 5px; text-align:center }
+.desk-front .drawer .wrap { padding:7px 15px; -moz-border-radius:10px; border-radius:10px; -webkit-border-radius:10px; color:#FFF; text-shadow:0 1px 2px rgba(0,0,0,0.5); font-size:18px; -webkit-box-shadow: 0 1px 1px rgba(255,255,255,0.3), inset 0 10px 20px rgba(84,49,0,0.6); -moz-box-shadow: 0 1px 1px rgba(255,255,255,0.3), inset 0 10px 20px rgba(84,49,0,0.6); box-shadow: 0 1px 1px rgba(255,255,255,0.3), inset 0 10px 20px rgba(84,49,0,0.6); -moz-border-radius: 40px; border-radius: 40px; -webkit-border-radius:40px; background:none; font-family:inherit }
+.desk-front .banner { width:728px; height:90px; position:absolute; left:250px; top:0; padding:20px 10px 10px 10px }
+.desk-front .banner i { position:absolute; left:22px; top:6px; overflow:hidden; height:15px; width:80px; font-size:10px; text-align:center; text-shadow:0 -1px 1px #000; font-style:normal; color:#FFF }
+
+#featured { background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat 0 -490px; height:180px; position:relative; margin:0 -10px; padding:0 10px }
+#featured .featured-canvas { width:700px; height:170px; position:absolute; top:10px; right:0; }
+#featured .canvas { float:left; width:140px; height:116px; overflow:hidden; padding:16px 10px 10px 10px; margin-right:6px; display:block; }
+
+#featured .pypus-tweet { position:relative; width:260px; height:170px; padding-left:20px }
+#featured .pypus-tweet .img { background:url(http://img.oncoloring.com/images/sprites.png) no-repeat -380px -160px; display:block; width:130px; height:170px; position:relative; z-index:10; }
+#featured #tweet li, #featured #tweet p { -moz-box-shadow:0 1px 1px 0 rgba(0,0,0,0.2); -webkit-box-shadow:0 1px 1px 0 rgba(0,0,0,0.2); box-shadow:0 1px 1px 0 rgba(0,0,0,0.2); border-top:1px solid rgba(255,255,255,0.3); background:rgba(244,233,223,0.8); -moz-border-radius: 10px; border-radius: 10px; -webkit-border-radius:10px; padding:6px 10px; position:absolute; width:130px; top:10px; right:0  }
+#featured #tweet li, #featured #tweet a, #featured #tweet p { font:12px 'Aller_Bd', Verdana, Geneva, sans-serif; line-height:18px }
+#featured .pypus-tweet img { z-index:10; position:relative; }
+
+#content { background:url(http://img.oncoloring.com/images/wrap_bg.png) repeat-y center #f4e9df; position:relative; z-index:50 }
+
+.list h1 { background:url(http://img.oncoloring.com/images/sprites.png) no-repeat 0 -350px; color:#FFF; text-shadow:0 2px 1px rgba(0,0,0,0.3); font-size:22px; margin:0 -10px; padding:15px 30px 25px; text-align:center }
+
+.list ul { float:left; padding-top:20px }
+.list li { float:left; position:relative }
+.list .left, .list .center, .list .right { width:333px; margin-bottom:20px; }
+.list h2 { display:block; overflow:hidden; height:20px; padding:10px 5px 0 5px; }
+.list .extended h2 { padding:0 5px; height:40px }
+.list h2 a { display:block; font:16px 'Aller_Bd', Verdana, Geneva, sans-serif; text-shadow:0 1px 0 #f8e7c6; text-align:center }
+.list .banner, .list .left .banner { width:333px !important; height:330px !important; background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat -1030px -505px }
+.list .center .banner { background-position:-1363px -505px }
+.list .right .banner { background-position:-1696px -505px }
+.list .banner span { display:block; padding:12px 0 0 19px; }
+.list .banner i { display:block; text-align:left; padding-top:20px; padding-left:10px; font:12px 'Aller_Bd', Verdana, Geneva, sans-serif; text-shadow:0 -1px 0 #630; color:#FFF; font-style:normal }
+.list .center .banner i { padding-left:14px; }
+.list .right .banner i { padding-left:19px; }
+
+.large-size li { width:333px; height:330px; background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat -1030px 0; }
+.large-size li img { width:300px; height:250px }
+.large-size .left li { background-position:-1030px 0 }
+.large-size .center li { background-position:-1363px 0 }
+.large-size .right li { background-position:-1696px 0 }
+.large-size span { display:block; padding:12px 0 9px 19px; }
+.large-size .left span { padding-left:19px; }
+.large-size .center span { padding-left:15px; }
+.large-size .right span { padding-left:14px; }
+
+.medium-size li { width:333px; height:165px; background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat 0 -980px; }
+.medium-size .left li { background-position:-1030px -330px }
+.medium-size .center li { background-position:-1363px -330px }
+.medium-size .right li { background-position:-1696px -330px }
+.medium-size span { display:block; padding:35px 0 30px 19px; }
+.medium-size .left span { padding-left:19px; }
+.medium-size .center span { padding-left:15px; }
+.medium-size .right span { padding-left:14px; }
+
+.list .decoration { position:absolute; width:110px; height:45px; left:10px; background:url(sprites.png) no-repeat; padding:0  }
+.large-size .decoration { bottom:50px; }
+.medium-size .decoration { bottom:40px; }
+.list .decoration.varation1, .list .decoration.varation2, .list .decoration.varation3, .list .decoration.varation4 { background-position:0 -425px }
+.list .decoration.varation5, .list .decoration.varation6, .list .decoration.varation7, .list .decoration.varation8 { background-position:0 -485px; left:200px }
+.list .decoration.varation9 { background-position:-130px -595px }
+.list .decoration.varation10 { background-position:-270px -595px }
+.list .decoration.varation11 { background-position:-410px -595px }
+.list .decoration.varation12 { background-position:-550px -595px }
+.list .decoration .item { position:absolute; width:120px; height:50px; padding:0; background:url(sprites.png) no-repeat; bottom:0; left:0; -webkit-transition:-webkit-transform 0.2s ease-in-out, bottom 0.2s ease-in-out; -webkit-transform: rotate(0deg); -moz-transition:-webkit-transform 0.2s ease-in-out, bottom 0.2s ease-in-out; -moz-transform: rotate(0deg); -o-transition:-webkit-transform 0.2s ease-in-out, bottom 0.2s ease-in-out; -o-transform: rotate(0deg); transition:-webkit-transform 0.2s ease-in-out, bottom 0.2s ease-in-out; transform: rotate(0deg); }
+.list .decoration.varation1 .item { background-position:-130px -420px }
+.list .decoration.varation2 .item { background-position:-270px -420px }
+.list .decoration.varation3 .item { background-position:-410px -420px }
+.list .decoration.varation4 .item { background-position:-550px -420px }
+.list .decoration.varation5 .item { background-position:-130px -480px }
+.list .decoration.varation6 .item { background-position:-270px -480px }
+.list .decoration.varation7 .item { background-position:-410px -480px }
+.list .decoration.varation8 .item { background-position:-550px -480px }
+.list .decoration.varation9 .item { background-position:-130px -550px }
+.list .decoration.varation10 .item { background-position:-270px -550px }
+.list .decoration.varation11 .item { background-position:-410px -550px }
+.list .decoration.varation12 .item { background-position:-550px -550px }
+.list li:hover .varation1 .item, .list li:hover .varation2 .item, .list li:hover .varation3 .item, .list li:hover .varation4 .item, .list li:hover .varation9 .item, .list li:hover .varation10 .item, .list li:hover .varation11 .item, .list li:hover .varation12 .item { -webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -o-transform: rotate(20deg); transform: rotate(20deg); bottom:10px }
+.list li:hover .varation5 .item, .list li:hover .varation6 .item, .list li:hover .varation7 .item, .list li:hover .varation8 .item { -webkit-transform: rotate(-20deg); -moz-transform: rotate(-20deg); -o-transform: rotate(-20deg); transform: rotate(-20deg); bottom:20px }
+
+.breadcrumb { float:left; width:100% }
+.breadcrumb ul { width:960px; float:left; padding:5px 10px; margin:0 10px 10px; -moz-box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(209,184,157,0.5); -webkit-box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(209,184,157,0.5); box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(209,184,157,0.5); background:rgba(240,225,209,0.8); -moz-border-radius: 10px; border-radius: 10px; -webkit-border-radius:10px }
+.breadcrumb li { background:none; width:auto; height:auto; margin:0 5px 0 0; float:left }
+.breadcrumb li a { background:url(http://img.oncoloring.com/images/list-type-arrow.gif) center right no-repeat; padding:0 20px 0 0; opacity:0.5 }
+.breadcrumb li a:hover { opacity:1 }
+
+.page, .historial { width:980px; float:left; margin:0; text-align:center; padding:20px 10px 0 }
+.historial { padding-top:40px }
+.page a { background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat -1470px -910px; width:60px; height:26px; padding:17px 0; margin:0; display:inline-block; font:18px 'Aller_Bd', Verdana, Geneva, sans-serif; text-align:center; }
+.page a.current, .page a:hover { background-position: -1530px -910px; color:#FFF; text-shadow:0 1px 2px rgba(0,0,0,0.5) }
+.historial .back { display:inline-block; font:18px 'Aller_Bd', Verdana, Geneva, sans-serif; text-align:center; width:auto; height:auto; margin:0 140px 30px 140px; padding:10px 20px; -moz-box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(209,184,157,0.5); -webkit-box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(209,184,157,0.5); box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(209,184,157,0.5); background:rgba(240,225,209,0.8); -moz-border-radius: 10px; border-radius: 10px; -webkit-border-radius:10px; text-shadow:0 1px 1px rgba(255,255,255,0.7) }
+.historial .back a { font:18px 'Aller_Bd', Verdana, Geneva, sans-serif; }
+.historial img, .historial .img { width:120px; height:100px; margin:-45px 20px -50px 0; float:left; background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat -1030px -910px; padding:5px 0 10px 5px; -webkit-transition:-webkit-transform 0.2s ease-in-out; -webkit-transform: rotate(-3deg); -moz-transition:-moz-transform 0.2s ease-in-out; -moz-transform: rotate(-3deg); -o-transition:-o-transform 0.2s ease-in-out; -o-transform: rotate(-3deg); transition:transform 0.2s ease-in-out; transform: rotate(-3deg) }
+.historial .back-category img { background-position:-1170px -910px }
+.historial .back-subcategory .img { background-position:-1310px -910px; width:135px; margin-top:-50px }
+.historial .back:hover { background:#adba25 url(http://img.oncoloring.com/images/green_bg.jpg); -webkit-box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(101,121,5,0.8); -moz-box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(101,121,5,0.8); box-shadow:0 1px 1px 0 rgba(255,255,255,0.4), inset 0 1px 10px 0 rgba(101,121,5,0.8) }
+.historial .back:hover, .historial .back:hover a { color:#FFF; text-shadow:0 1px 2px rgba(0,0,0,0.5) }
+.historial .back:hover img, .historial .back:hover .img { -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -o-transform: rotate(1deg); transform: rotate(1deg) }
+
+.board { width:1020px; float:left; margin:0 -10px;  position:relative }
+.board .top { width:100%; padding-top:20px; background:url(http://img.oncoloring.com/images/sprites.png) no-repeat 0 -660px }
+.board .bottom { width:1000px; padding-top:20px; margin:0 10px; background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat -10px -1260px }
+.board .wrap { background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat 0 -670px; height:540px; padding:25px 30px }
+.board .left { float:left; width:580px; margin:0 30px 0 0 }
+.board .right { float:left; width:350px; }
+
+.featured-paint { position:relative; padding:10px 0 0 50px; margin:0 0 20px 0 }
+.featured-paint .titulh1 { font-size:18px; text-shadow:0 1px 1px #f8e7c6; font-weight: bold; margin:0 0 10px 0 }
+.featured-paint .slides_container, .featured-paint .hero { overflow:hidden; height:210px; width:520px; }
+.featured-paint .item { float:left; width:150px; height:180px; margin:0 20px 10px 0; padding:10px 0 0 0; position:relative }
+.featured-paint .item img { padding:5px; margin:0; width:140px; height:116px }
+.featured-paint .item img, .featured-paint .item h2 a, .featured-paint .btn { background:#f4e9df; -webkit-box-shadow: 0 3px 3px rgba(84,49,0,0.6), inset 0 -5px 5px rgba(255,255,255,0.6); -moz-box-shadow: 0 3px 3px rgba(84,49,0,0.6), inset 0 -5px 5px rgba(255,255,255,0.6); box-shadow: 0 3px 3px rgba(84,49,0,0.6), inset 0 -5px 5px rgba(255,255,255,0.6); border-top:1px solid #FFF }
+.featured-paint .item h2 a { padding:5px; display:block; margin:0 }
+.featured-paint .prev, .featured-paint .next { background:url(http://img.oncoloring.com/images/sprites.png) no-repeat -30px -690px; width:50px; height:0; padding-top:50px; overflow:hidden; position:absolute; top:42%; left:0 }
+.featured-paint .next {  background-position:-80px -690px; left:545px }
+.featured-paint .prev:active {  background-position:-30px -689px }
+.featured-paint .next:active {  background-position:-80px -689px }
+.featured-paint .pagination { position:absolute; z-index:10; bottom:-10px; right:150px}
+.featured-paint .pagination li { float:left; list-style:none }
+.featured-paint .pagination li a { display:block;  float:left; overflow:hidden; padding:5px 10px; font:12px 'Aller_Bd', Verdana, Geneva, sans-serif; text-shadow:0 1px 1px #f8e7c6 }
+.featured-paint .pagination li.current a { background: url(http://img.oncoloring.com/images/sprites.png) 0 -690px no-repeat  }
+.featured-paint .btn { padding:5px 10px; text-align:center; display:inline-block; position:absolute; bottom:-10px; right:40px; z-index:15; font:14px 'Aller_Bd', Verdana, Geneva, sans-serif; text-shadow:0 1px 1px #f8e7c6 }
+.featured-paint .scotch { background:url(http://img.oncoloring.com/images/scotch_horizontal-bg.png) no-repeat; width:80px; height:25px; display:block; position:absolute; top:0; left:50%; margin-left:-40px; z-index:10; }
+
+.rotation-left { -webkit-transition:-webkit-transform 0.2s ease-in-out; -webkit-transform: rotate(1deg); -moz-transition:-moz-transform 0.2s ease-in-out; -moz-transform: rotate(1deg); -o-transition:-o-transform 0.2s ease-in-out; -o-transform: rotate(1deg); transition:transform 0.2s ease-in-out; transform: rotate(1deg); }
+.rotation-right { -webkit-transition:-webkit-transform 0.2s ease-in-out; -webkit-transform: rotate(-1deg); -moz-transition:-moz-transform 0.2s ease-in-out; -moz-transform: rotate(-1deg); -o-transition:-o-transform 0.2s ease-in-out; -o-transform: rotate(-1deg); transition:transform 0.2s ease-in-out; transform: rotate(-1deg); }
+.rotation-left:hover { -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -o-transform: rotate(-1deg); transform: rotate(-1deg) }
+.rotation-right:hover { -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -o-transform: rotate(1deg); transform: rotate(1deg) }
+
+.board .fb-api { padding:155px 0 55px 27px; width:323px; height:270px; margin-top:65px }
+
+.app { padding-top:20px }
+.app .object { position:relative; margin-bottom:-10px; text-align:center }
+.app .object object { margin:0 auto }
+.app h1 { background:url(http://img.oncoloring.com/images/sprites.jpg) no-repeat -1030px -840px; padding:10px 10px 15px 10px; margin:0 0 20px 0; font-size:18px; text-shadow:0 1px 0 #f8e7c6; text-align:center; position:relative; height:38px; overflow:hidden; line-height:50px; }
+.app h1.extended { background-position:-1030px -1030px; height:58px; line-height:25px; padding-top:17px }
+
+/* added for coloring flash */
+.noscriptcaption {
+	font: sans-serif;
+	color: black;
+	font-style: italic;
+	font-size: medium;
+	font-weight: bold;
+}
+#ad{
+
+	position:relative;
+	left:200px;
+	/*width:300px;
+	height:350px;*/
+	width:640px;
+	height:560px;
+	text-align:center;
+
+}
+#game{
+	display:none;
+}

@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-13 12:01+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: .\settings.py:41
+msgid "English"
+msgstr "Ағылшынша"
+
+#: .\settings.py:42
+#, fuzzy
+msgid "Kazakh"
+msgstr "Қазақша"
+
+#: .\settings.py:43
+msgid "Russian"
+msgstr "Орысша"
+
+#: .\AlaKay_App\views.py:15
+msgid "Welcome to my site."
+msgstr "Сайтымызға қош келдіңіз!!!"
+
+#: .\AlaKay_App\views.py:16
+msgid "Main Page"
+msgstr "Басты Бет"
+
+#: .\AlaKay_App\views.py:17
+msgid "Game for children"
+msgstr "Балаларға арналған ойын сайты"
+
+#: .\templates\base.html.py:13
+msgid "home"
+msgstr "басты бет"
+
+#: .\templates\base.html.py:17
+msgid "logout"
+msgstr "шығу"
+
+#: .\templates\base.html.py:19
+msgid "login"
+msgstr "кіру"
+
+#: .\templates\base.html.py:20
+msgid "register"
+msgstr "тіркелу"

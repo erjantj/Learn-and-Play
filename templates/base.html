@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AlaQay | {%block title%}{%endblock%}</title>
+
+	{% load i18n %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/site_media/bootstrap/css/bootstrap.css" rel="stylesheet">
+    {% block custom_style %}{% endblock %}
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="/site_media/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/site_media/bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/site_media/bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/site_media/bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/site_media/bootstrap/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    {% load i18n %}
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/" style = >AlaQay</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="/about">{% trans "About" %}</a></li>
+
+              {% if not user.is_authenticated %}
+              <li><a href="/register">{% trans "Register" %}</a></li>
+              {% endif %}
+            </ul>
+            <!--
+              <ul class="nav pull-right">
+                <li>
+                  <form action="/i18n/setlang/" method="post">{% csrf_token %}
+                    <input name="language" type="hidden" value="{{LANGUAGES.0.0}}">
+                    <input type="submit" value="{{LANGUAGES.0.1}}" class="btn btn-primary " />
+                  </form>
+                </li>
+                <li class="divider-vertical"></li>
+                <li>
+                  <form action="/i18n/setlang/" method="post">{% csrf_token %}
+                    <input name="language" type="hidden" value="{{LANGUAGES.2.0}}" />
+                    <input type="submit" value="{{LANGUAGES.2.1}}" class="btn btn-primary " />
+                  </form>
+                </li>
+                <li class="divider-vertical"></li>
+                <li>
+                  <form action="/i18n/setlang/" method="post">{% csrf_token %}
+                  <input name="language" type="hidden" value="{{LANGUAGES.1.0}}" />
+                  <input type="submit" value="{{LANGUAGES.1.1}}" class="btn btn-primary " />
+                </form>
+              </ul>
+
+              -->
+              {%if user.is_authenticated%}
+              <ul class="nav pull-right">
+                <li><a href="/user/{{user.username}}">
+                {{user.username}}</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="/logout">{% trans "logout" %}</a> </li>
+              </ul>
+
+
+
+              {%else%}
+                 <form style="background-color:black;" method="post" action="/login/">
+                  {% csrf_token %}
+                  <p class="navbar-text pull-right" >
+                    <input type="text" class="input-small" placeholder="Username"  name="username" maxlength="30">
+                    <input type="password" class="input-small" placeholder="Password"  name="password">
+                    <input type="hidden" name="next" value="/">
+                    <button type="submit" class="btn" style="margin-top:-9px;">Sign in</button>
+                  </p>
+                </form>
+
+              {%endif%}
+
+
+            
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Tags</li>
+              {% load game_tags %}
+              {% tags_menu %}
+
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          {%block content%}{%endblock%}
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p >&copy; AlaQay 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/site_media/bootstrap/js/jquery.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/site_media/bootstrap/js/bootstrap-typeahead.js"></script>
+   
+
+  </body>
+</html>
+

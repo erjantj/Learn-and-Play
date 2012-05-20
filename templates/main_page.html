@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% block title %}Welcome to AlaQay{% endblock %}
+{% block head %}{{ page }}{% endblock %}
+{% block custom_style %}
+<style type="text/css">
+
+#raiting {position:relative; height:16px; cursor:pointer; width:83px; float:left} /* Блок рейтинга*/
+#raiting_blank, #raiting_votes, #raiting_hover {height:16px; position:absolute}
+#raiting_blank { background:url(/site_media/images/ratings.png); width:83px; } /* "Чистые" звездочки */
+#raiting_votes {background:url(/site_media/images/ratings.png) 0 -16px} /*  Закрашенные звездочки */ 
+#raiting_hover {background:url(/site_media/images/ratings.png) 0 -32px; display:none}  /*  звездочки при голосовании */ 
+#raiting_info {margin-left:100px}
+#raiting_info img{vertical-align:middle; margin:0 5px; display:none}
+</style>
+<script type="text/javascript" src="/site_media/bootstrap/js/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="hero-unit">
+            <div class="row-fluid">
+            	<div class="span8">
+            		<h1>Welcome to AlaQay!!!</h1>
+            <p>AlaQay is a place  where you can find many interesting and educational games for children of preschool age. Now kids can combine fun with learning</p>
+            <p><a class="btn btn-primary btn-large" href='/about'>Learn more &raquo;</a></p>
+            	</div>
+	            <div class="span4">
+				
+					<ul class="thumbnails">
+		        		<li class="span3">
+		          			<div class="thumbnail" style="border:none;">
+		            			<img src="/site_media/images/abc.jpg" alt="" />
+		            		</div>
+		            	</li>
+		      		</ul>
+		        </div>
+		    </div>
+            
+     </div>
+
+
+	{% if games_all %}
+		{% for row in games_all %}
+		 	<div class="row-fluid">
+			{% for game in row %}
+	            <div class="span4">
+					<a href="/app/{{game.id}}" >
+		            	<div class="thumbnail">	
+					  		<img src = "/site_media/images/games/{{ game.image_name }}" />
+					  	</div>
+
+		              	<h2>{{game.title}}</h2>
+	              	</a>
+	              	<a herf="#" >{{game.user.username}}</a>
+	              	<div id="raiting_star">
+						<div id="raiting">
+							<div id="raiting_blank"></div>
+							<div id="raiting_hover"></div>
+							<div id="raiting_votes" style='width:{{game.rate}}px;'></div>
+						</div>
+					</div>
+					<br />
+					<div class="clear"></div>
+	            </div><!--/span-->
+				
+
+			{% endfor %}
+			</div><!--/row-->
+		{% endfor %}
+	{% else %}
+		<h2>{% trans "No games found" %}</h2>
+	{% endif%}
+{% endblock %}
